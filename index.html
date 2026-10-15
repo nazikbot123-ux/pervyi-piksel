@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Первый пиксель — мой первый сайт</title>
+  <meta name="description" content="Мой первый сайт: история, первые шаги в создании сайтов и планы на будущее.">
+  <meta name="theme-color" content="#090a10">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+  <header class="topbar">
+    <a class="logo" href="#main">Первый пиксель</a>
+    <nav aria-label="Основная навигация">
+      <a href="#about">О сайте</a>
+      <a href="story.html">Моя история</a>
+      <a href="journey.html">Мой путь</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <p class="eyebrow">МОЙ ПЕРВЫЙ ПРОЕКТ</p>
+      <h1>Привет!<br>Это мой сайт.</h1>
+      <p class="intro">Я только учусь создавать сайты — и это мой первый проект.</p>
+      <button id="hello-button" type="button" aria-controls="fact-card" aria-expanded="false">Из чего создан этот сайт?</button>
+    </section>
+
+    <section id="fact-card" class="info-card fact-card" hidden aria-labelledby="fact-title">
+      <button id="close-fact" class="close-button" type="button" aria-label="Закрыть карточку">×</button>
+      <p class="eyebrow">НЕМНОГО О МОЁМ САЙТЕ</p>
+      <h2 id="fact-title">Как я его сделал?</h2>
+      <p>Сначала я добавил на страницу текст и кнопки, потом выбрал цвета и оформление. HTML помогает разместить содержимое, CSS отвечает за внешний вид, а JavaScript — за действия. Например, благодаря ему открывается эта карточка. Я только учусь, и этот сайт — мой первый шаг.</p>
+    </section>
+
+    <section class="page-links" aria-labelledby="page-links-title">
+      <h2 id="page-links-title">Загляни дальше</h2>
+      <div class="page-link-grid">
+        <a class="page-link-card" href="story.html">
+          <span class="eyebrow">НАЧАЛО</span>
+          <strong>Моя история</strong>
+          <span>Плакат и память о моём первом сайте.</span>
+          <span class="page-link-arrow">Открыть страницу <span aria-hidden="true">→</span></span>
+        </a>
+        <a class="page-link-card" href="journey.html">
+          <span class="eyebrow">ПЛАНЫ</span>
+          <strong>Мой путь</strong>
+          <span>Почему я начал и чему хочу научиться.</span>
+          <span class="page-link-arrow">Открыть страницу <span aria-hidden="true">→</span></span>
+        </a>
+      </div>
+    </section>
+
+    <section id="about" class="info-card">
+      <h2>Часто задаваемые вопросы</h2>
+      <details>
+        <summary>Что это за сайт?</summary>
+        <p>Это мой первый сайт. Я только начинаю учиться создавать сайты.</p>
+      </details>
+      <details>
+        <summary>Как со мной связаться?</summary>
+        <p>Конечно! Если у тебя есть мой контакт, напиши мне — я буду рад.</p>
+      </details>
+      <details>
+        <summary>Можно ли предложить идею?</summary>
+        <p>Конечно! Буду с радостью ждать ваши идеи и предложения.</p>
+      </details>
+    </section>
+
+    <section id="contact" class="info-card contact-card">
+      <h2>Контакты</h2>
+      <p>Если ты уже знаешь мой контакт, напиши мне туда. Буду рад твоему сообщению!</p>
+    </section>
+  </main>
+
+  <footer>Первый пиксель · мой первый сайт</footer>
+</body>
+</html>
